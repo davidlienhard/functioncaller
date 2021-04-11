@@ -23,11 +23,8 @@ use \DavidLienhard\FunctionCaller\Error;
  */
 class Call
 {
-    /**
-     * result retured from the called function
-     * @var     mixed
-     */
-    private $result;
+    /** result retured from the called function */
+    private mixed $result;
 
     /**
      * a numeric array containing all errors caught from the function
@@ -49,7 +46,7 @@ class Call
      * @param   mixed   $arguments      arguments to pass into the function
      * @return  void
      */
-    public function __construct(string $function, ...$arguments)
+    public function __construct(string $function, mixed ...$arguments)
     {
         $handler = new ErrorHandler;
 
@@ -63,9 +60,8 @@ class Call
 
     /**
      * returns the result returned from the called function
-     * @return      mixed
      */
-    public function getResult()
+    public function getResult(): mixed
     {
         return $this->result;
     }
