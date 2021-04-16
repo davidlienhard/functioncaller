@@ -33,7 +33,7 @@ class Call
     private array $allErrors = [];
 
     /** the last error caught from the function call */
-    private ?Error $lastError = null;
+    private Error|null $lastError = null;
 
     /**
      * calls the given function and catches the errors
@@ -69,7 +69,7 @@ class Call
     /**
      * returns the last error that occurred or null if no error occurred
      */
-    public function getLastError() : ?Error
+    public function getLastError() : Error|null
     {
         return $this->lastError;
     }

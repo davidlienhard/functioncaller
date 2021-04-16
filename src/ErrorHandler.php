@@ -30,7 +30,7 @@ class ErrorHandler
     private array $allErrors = [];
 
     /** the last error caught from the function call */
-    private ?Error $lastError = null;
+    private Error|null $lastError = null;
 
     /**
      * handles the error passed from php and stores the errors
@@ -43,12 +43,7 @@ class ErrorHandler
      */
     public function handle(int $errno, string $errstr, string $errfile, int $errline) : bool
     {
-        $error = new Error(
-            $errno,
-            $errstr,
-            $errfile,
-            $errline
-        );
+        $error = new Error($errno, $errstr, $errfile, $errline);
 
         $this->lastError = $error;
         $this->allErrors[] = $error;
@@ -59,7 +54,7 @@ class ErrorHandler
     /**
      * returns the last error that occurred or null if no error occurred
      */
-    public function getLastError() : ?Error
+    public function getLastError() : Error|null
     {
         return $this->lastError;
     }
