@@ -1,6 +1,6 @@
 {
     "name": "davidlienhard/functioncaller",
-    "license": "proprietary",
+    "license": ["MIT"],
     "description": "🐘 php library to call functions and ctahc triggered errors",
     "keywords": [ "errorhandler", "php", "library" ],
     "type": "libary",
