@@ -3,7 +3,7 @@
  * containes error class
  *
  * @package         Database
- * @author          David Lienhard <david@lienhard.win>
+ * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
 
@@ -15,7 +15,7 @@ namespace DavidLienhard\FunctionCaller;
  * contains all the information to an error
  *
  * @category        Database
- * @author          David Lienhard <david@lienhard.win>
+ * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
 class Error
