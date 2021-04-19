@@ -3,7 +3,7 @@
  * containes call class
  *
  * @package         Database
- * @author          David Lienhard <david@lienhard.win>
+ * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
 
@@ -18,7 +18,7 @@ use \DavidLienhard\FunctionCaller\Error;
  * catches the errors and stores them
  *
  * @category        Database
- * @author          David Lienhard <david@lienhard.win>
+ * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
 class Call

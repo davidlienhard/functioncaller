@@ -3,7 +3,7 @@
  * containes error handler class
  *
  * @package         Database
- * @author          David Lienhard <david@lienhard.win>
+ * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
 
@@ -18,7 +18,7 @@ use \DavidLienhard\FunctionCaller\Error;
  * phps set_error_handler()
  *
  * @category        Database
- * @author          David Lienhard <david@lienhard.win>
+ * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
 class ErrorHandler
