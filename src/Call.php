@@ -1,8 +1,7 @@
 <?php
 /**
- * containes call class
+ * contains call class
  *
- * @package         Database
  * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
@@ -17,7 +16,6 @@ use \DavidLienhard\FunctionCaller\Error;
  * calls a given function with its parameters,
  * catches the errors and stores them
  *
- * @category        Database
  * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
@@ -58,17 +56,13 @@ class Call
         $this->allErrors = $handler->getAllErrors();
     }
 
-    /**
-     * returns the result returned from the called function
-     */
+    /** returns the result returned from the called function */
     public function getResult(): mixed
     {
         return $this->result;
     }
 
-    /**
-     * returns the last error that occurred or null if no error occurred
-     */
+    /** returns the last error that occurred or null if no error occurred */
     public function getLastError() : Error|null
     {
         return $this->lastError;

@@ -2,7 +2,6 @@
 /**
  * containes error handler class
  *
- * @package         Database
  * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
@@ -17,7 +16,6 @@ use \DavidLienhard\FunctionCaller\Error;
  * a basic error handler that gets called from
  * phps set_error_handler()
  *
- * @category        Database
  * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
@@ -51,9 +49,7 @@ class ErrorHandler
         return true;
     }
 
-    /**
-     * returns the last error that occurred or null if no error occurred
-     */
+    /** returns the last error that occurred or null if no error occurred */
     public function getLastError() : Error|null
     {
         return $this->lastError;
