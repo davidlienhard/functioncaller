@@ -1,8 +1,7 @@
 <?php
 /**
- * containes error class
+ * contains error class
  *
- * @package         Database
  * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
@@ -14,7 +13,6 @@ namespace DavidLienhard\FunctionCaller;
 /**
  * contains all the information to an error
  *
- * @category        Database
  * @author          David Lienhard <github@lienhard.win>
  * @copyright       David Lienhard
  */
@@ -37,33 +35,25 @@ class Error
     ) {
     }
 
-    /**
-     * returns the error number
-     */
+    /** returns the error number */
     public function getErrno() : int
     {
         return $this->errno;
     }
 
-    /**
-     * returns the error mesage
-     */
+    /** returns the error mesage */
     public function getErrstr() : string
     {
         return $this->errstr;
     }
 
-    /**
-     * returns the error file
-     */
+    /** returns the error file */
     public function getErrfile() : string
     {
         return $this->errfile;
     }
 
-    /**
-     * returns the error line
-     */
+    /** returns the error line */
     public function getErrline() : int
     {
         return $this->errline;
@@ -74,9 +64,9 @@ class Error
      * with the following structure
      * [
      *      'errno'   => $errno,
-     *      'errstr'  => $>errstr,
-     *      'errfile' => $>errfile,
-     *      'errline' => $>errline,
+     *      'errstr'  => $errstr,
+     *      'errfile' => $errfile,
+     *      'errline' => $errline,
      * ]
      */
     public function getAsArray() : array
