@@ -1,7 +1,7 @@
 {
     "name": "davidlienhard/functioncaller",
     "license": ["MIT"],
-    "description": "🐘 php library to call functions and ctahc triggered errors",
+    "description": "🐘 php library to call functions and catch triggered errors",
     "keywords": [ "errorhandler", "php", "library" ],
     "type": "libary",
     "homepage": "https://github.com/davidlienhard/functioncaller/",
