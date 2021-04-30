@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace DavidLienhard\FunctionCaller;
 
-use \DavidLienhard\FunctionCaller\Error;
+use DavidLienhard\FunctionCaller\Error;
 
 /**
  * a basic error handler that gets called from

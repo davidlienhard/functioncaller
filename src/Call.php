@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace DavidLienhard\FunctionCaller;
 
-use \DavidLienhard\FunctionCaller\Error;
+use DavidLienhard\FunctionCaller\Error;
 
 /**
  * calls a given function with its parameters,
