@@ -14,5 +14,5 @@ if ($result === false) {                                // check if function has
     $errstr = $caller->getLastError()?->getErrstr();    // get error string
     $errno = $caller->getLastError()?->getErrno();      // get error number
 
-    throw new \Exception("unable to read file 'testfile.php': ".$errsr." (".$errno.")");
+    throw new \Exception("unable to read file 'testfile.php': ".$errstr." (".$errno.")");
 }
