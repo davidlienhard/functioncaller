@@ -40,16 +40,16 @@ class Call
      *
      * it then fetches the errors from the error-handler instance
      *
-     * @param   string  $function       function to call
-     * @param   mixed   $arguments      arguments to pass into the function
+     * @param   callable        $callable       function to call
+     * @param   mixed           $arguments      arguments to pass into the function
      * @return  void
      */
-    public function __construct(string $function, mixed ...$arguments)
+    public function __construct(callable $callable, mixed ...$arguments)
     {
         $handler = new ErrorHandler;
 
         \set_error_handler([ $handler, "handle" ]);
-        $this->result = \call_user_func($function, ...$arguments);
+        $this->result = \call_user_func($callable, ...$arguments);
         \restore_error_handler();
 
         $this->lastError = $handler->getLastError();
