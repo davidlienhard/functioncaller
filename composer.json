@@ -42,5 +42,10 @@
         "doc": [
             "@phpdoc"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }
