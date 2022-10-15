@@ -36,7 +36,6 @@ class ErrorHandler
      * @param       string  $errstr     error message
      * @param       string  $errfile    file in that the error has occurred
      * @param       int     $errline    line on that the error has occurred
-     * @return      true
      */
     public function handle(int $errno, string $errstr, string $errfile, int $errline) : bool
     {
